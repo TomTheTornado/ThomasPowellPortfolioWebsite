@@ -3,57 +3,100 @@
 <head>
 <style>
 body {
-    height: 100vh;
-    background-color: #A5D6D9;
-    background-image: linear-gradient(33deg, #03090f 40%, #07131f 40%, #07131f 50%, #0b1d2f 50%, #0b1d2f 60%, #0e273f 60%, #0e273f 70%, #03090f 70%); 
+    margin: 0;
+	height: 100vh;
+    background-color: #ee8519;
+    background-image: linear-gradient(33deg, #03090f 30%, #07131f 30%, #07131f 43%, #0b1d2f 43%, #0b1d2f 57%, #0e273f 57%, #0e273f 70%, #03090f 70%); 
     background-repeat:no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 
 
+/* Navigation Bar*/
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
 
 header {
-	background: #c56b0f;
-	padding: 15px 15 15 0;
-	text-align: center;
-	align-content: center;
+  background: #ee8519;
+  height: 10vh;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-	background-color: #333;
-	overflow: hidden;
+header::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.logo {
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
   text-decoration: none;
-  font-size: 17px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+nav a:hover {
+  color: #000;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
 
 
-h1   {
-	background-color: #c56b0f;
+/*Footer*/
+footer{
+	background-color: #ee8519;
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 7vh;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+/* Other Styles*/
+h1	{
 	color: #FFFFFF;
-    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif*/
-    text-align: center;
+	text-align: center;
 }
 
 h2	{
@@ -65,26 +108,66 @@ p    {
 	color: rgb(59, 58, 58);
 
 }
+
+/*Actual HTML*/
 </style>
 </head>
 
 <body>
+
+
 	<header>
+		<div class="container">
+		<h1 class="logo"></h1>
 
-	<h1>Thomas Powell</h1>
-		<div class="topnav">
-			<a href="#home">Home</a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
-			<a href="#about">About</a>
-		</div> 
-
+	      <nav>
+		    <ul>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">About</a></li>
+		      <li><a href="#">Links</a></li>
+			  <li><a href="#">Projects</a></li>
+			  <li><a href="#">Contact</a></li>
+			 </ul>
+			</nav>
+		</div>
 	</header>
 
+
+
 	<article>
-		<h2>Thomas Powell</h2>
+		<h2>Body</h2>
 		<p>This is a paraaph.</p>
 	
 	</article>
+
+
+	<div class="container">
+
+        <a class="links" href="" data="/images/Top-Button-Black.svg">
+			<div class="view button">
+            ABOUT
+            </div>
+        </a>
+        <a class="links" href="">
+            <div class="upload button">
+            LINKS
+			</div>
+        </a>
+        <a class="links" href="">
+            <div class="how button">
+			PROJECTS
+            </div>
+        </a>
+		<a class="links" href="">
+            <div class="about button">
+            CONTACT
+            </div>
+        </a>
+
+    </div>
+
+	<footer>
+		<h1> Footer </h1>
+	</footer>
 </body>
 </html>
