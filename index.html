@@ -4,10 +4,10 @@
 <style>
 body {
     margin: 0;
-	height: 100vh;
-    background-color: #ee8519;
-    background-image: linear-gradient(33deg, #03090f 30%, #07131f 30%, #07131f 43%, #0b1d2f 43%, #0b1d2f 57%, #0e273f 57%, #0e273f 70%, #03090f 70%); 
-    background-repeat:no-repeat;
+	  height: 100vh;
+    background-color: rgb(54, 54, 54);
+    background-image: url("images/background2.svg"); 
+    background-repeat:repeat-vertical;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -20,8 +20,14 @@ body {
 }
 
 header {
-  background: #ee8519;
+  background: #0D0A1c;
   height: 10vh;
+  position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
 }
 
 header::after {
@@ -36,7 +42,8 @@ header::after {
 }
 
 nav {
-  float: right;
+  float: center;
+  top: 0;
 }
 
 nav ul {
@@ -54,14 +61,14 @@ nav li {
 }
 
 nav a {
-  color: #444;
+  color: #b1d1cc;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
 
 nav a:hover {
-  color: #000;
+  color: #b1d1cc;
 }
 
 nav a::before {
@@ -84,8 +91,8 @@ nav a:hover::before {
 
 /*Footer*/
 footer{
-	background-color: #ee8519;
-	position: fixed;
+	background-color: #0D0A1c;
+	
    left: 0;
    bottom: 0;
    height: 7vh;
@@ -95,24 +102,149 @@ footer{
 }
 /* Other Styles*/
 h1	{
-	color: #FFFFFF;
+	color: #e1e3e1;
 	text-align: center;
 }
 
 h2	{
-	color: #FFFFFF;
+	color: #e1e3e1;
     /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif*/
     text-align: center;
 }
+
+h3	{
+	color: #e1e3e1;
+	text-align: center;
+  font-size: 12pt;
+}
+
 p    {
-	color: rgb(59, 58, 58);
+	color: #e1e3e1;
 
 }
 
+
+/*About Button*/
+div.about_button{
+  display: block;
+	height:16vh;
+  width: 63vw;
+  margin: 2vw auto 0px auto;
+  transform: skewY(-7deg);
+  line-height: 16vh;
+  font-size: 10vh;
+
+
+  border: none;
+  background-color: #135EB9;
+  color: #e1e3e1;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10vw;
+}
+
+div.about_button:hover{
+  background-color: #0D0A1c;
+  color: #b1d1cc;
+}
+
+div.about_button:active{
+  width: 63vw;
+}
+
+/*2nd Button*/
+div.resume_button{
+  display: block;
+	height:16vh;
+  width: 63vw;
+  margin: 2vw auto 0px auto;
+  transform: skewY(-7deg);
+  line-height: 16vh;
+  font-size: 10vh;
+
+
+  border: none;
+  background-color: #145C42;
+  color: #e1e3e1;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+}
+
+div.resume_button:hover{
+  background-color: #0D0A1c;
+  color: #b1d1cc;
+}
+
+div.resume_button:active{
+  width: 63vw;
+}
+
+/*3nd Button*/
+div.projects_button{
+  display: block;
+	height:16vh;
+  width: 63vw;
+  margin: 2vw auto 0px auto;
+  transform: skewY(-7deg);
+  line-height: 16vh;
+  font-size: 10vh;
+
+
+  border: none;
+  background-color: #a05228;
+  color: #e1e3e1;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+}
+
+div.projects_button:hover{
+  background-color: #0D0A1c;
+  color: #b1d1cc;
+}
+
+div.projects_button:active{
+  width: 63vw;
+}
+
+/*4nd Button*/
+div.contact_button{
+  display: block;
+	height:16vh;
+  width: 63vw;
+  margin: 2vw auto 0px auto;
+  margin-bottom: 10vw;
+  transform: skewY(-7deg);
+  line-height: 16vh;
+  font-size: 10vh;
+
+
+  border: none;
+  background-color: #323979;
+  color: #e1e3e1;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+}
+
+div.contact_button:hover{
+  background-color: #0D0A1c;
+  color: #b1d1cc;
+}
+
+
+div.contact_button:active{
+  width: 63vw;
+}
+
 /*Actual HTML*/
+
 </style>
 </head>
 
+<STYLE>A {text-decoration: none;} </STYLE>
 <body>
 
 
@@ -120,54 +252,58 @@ p    {
 		<div class="container">
 		<h1 class="logo"></h1>
 
-	      <nav>
-		    <ul>
+	    <nav>
+        <h1>Thomas Powell Portfolio</h1>
+		  <ul>
 			  <li><a href="#">Home</a></li>
 			  <li><a href="#">About</a></li>
 		      <li><a href="#">Links</a></li>
 			  <li><a href="#">Projects</a></li>
 			  <li><a href="#">Contact</a></li>
-			 </ul>
-			</nav>
-		</div>
+       </ul>
+       <h1> </br> </h1>
+      </nav>
+      <h1> </br> </h1>
+    </div>
 	</header>
 
 
-
+  <!--
 	<article>
 		<h2>Body</h2>
-		<p>This is a paraaph.</p>
+		<p>Welcome to the website.</p>
 	
 	</article>
-
+  -->
+  <article>
+    </br>
+    </br>
+    </br>
+    </br>
+  </article>
 
 	<div class="container">
 
-        <a class="links" href="" data="/images/Top-Button-Black.svg">
-			<div class="view button">
-            ABOUT
-            </div>
-        </a>
-        <a class="links" href="">
-            <div class="upload button">
-            LINKS
-			</div>
-        </a>
-        <a class="links" href="">
-            <div class="how button">
-			PROJECTS
-            </div>
-        </a>
+    <a class="links" href="">
+      <div class="about_button">ABOUT</div>
+    </a>
+    <a class="links" href="">
+      <div class="resume_button">RESUME</div>
+    </a>
+    <a class="links" href="">
+      <div class="projects_button">PROJECTS</div>
+    </a>
 		<a class="links" href="">
-            <div class="about button">
-            CONTACT
-            </div>
-        </a>
+      <div class="contact_button">CONTACT</div>
+    </a>
 
-    </div>
+  </div>
 
 	<footer>
-		<h1> Footer </h1>
+		<a>   
+      <br/>
+      © 2019 Thomas Powell 
+    </a>
 	</footer>
 </body>
 </html>
